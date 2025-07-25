@@ -14,5 +14,6 @@ jobs:
         run: |
           echo "Hello World"
           ls -la      
+          cd '02 Starting Project'
           npm install
-          npm run test
+          npm run test 
