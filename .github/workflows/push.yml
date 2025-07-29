@@ -13,7 +13,7 @@ jobs:
       - name: Print Hello World
         run: |
           echo "Hello World"
-          ls      
+          ls -la      
       - name: Getcode
         uses: actions/checkout@v3
       - name: install
