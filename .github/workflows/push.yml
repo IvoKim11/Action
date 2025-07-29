@@ -11,4 +11,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print Hello World
-        run: echo "Hello World"
+        run: |
+          echo "Hello World"
+          ls -la      
+      - name: Getcode
+        uses: actions/checkout@v3
+      - name: install
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - name: instal dependecy
+        run: npm ci
+      - name: run test
+        run:  npm run test 
